@@ -293,7 +293,7 @@ struct DetectionsListView: View {
     }
     
     private func exportDetections() {
-        var csvString = "id, station, species common name, species scientific name, latitude, longitude, confidence, probabilty score, certainty, algorithm"
+        var csvString = "id, station, species common name, species scientific name, latitude, longitude, confidence, probabilty, score, certainty, algorithm"
         for aDetection in detections {
             csvString += "\n"
             csvString += "\(aDetection.id),\(aDetection.station_id),\(aDetection.species?.commonName ?? "---"),\(aDetection.species?.scientificName ?? "---"),\(aDetection.lon),\(aDetection.lat),\(aDetection.confidence),\(aDetection.probability),\(aDetection.score),\(aDetection.certainity),\(aDetection.algorithm)"
