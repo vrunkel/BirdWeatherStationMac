@@ -117,6 +117,9 @@ struct DetectionsListView: View {
                     lastCursor = nil
                     firstCursor = nil
                     cursor = -1
+                    Task {
+                        await loadData()
+                    }
                 }
                 .buttonStyle(.borderedProminent)
             }

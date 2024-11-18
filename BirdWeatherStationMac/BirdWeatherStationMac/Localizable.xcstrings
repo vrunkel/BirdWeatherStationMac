@@ -5,10 +5,24 @@
 
     },
     "#%lld" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "#%lld"
+          }
+        }
+      }
     },
     "%@" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
     },
     "%@: species %lld - detections %lld" : {
       "localizations" : {
@@ -28,6 +42,12 @@
     },
     "%@°, %@°" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@°, %2$@°"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -37,10 +57,23 @@
       }
     },
     "%lld" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
     },
     "%lld - %lld" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld - %2$lld"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -65,6 +98,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sonagramm anpassen"
+          }
+        }
+      }
+    },
+    "all_period" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
           }
         }
       }
@@ -120,7 +163,14 @@
       }
     },
     "common_name" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allg. Name"
+          }
+        }
+      }
     },
     "Confidence" : {
       "localizations" : {
@@ -154,6 +204,16 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "data since: species %1$lld - detections %2$lld"
+          }
+        }
+      }
+    },
+    "day_period" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag"
           }
         }
       }
@@ -203,7 +263,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "PUC token eingeben um Serverabfrage zu starten"
+            "value" : "PUC Token eingeben um Serverabfrage zu starten"
           }
         }
       }
@@ -269,7 +329,14 @@
       }
     },
     "id %lld" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "id %lld"
+          }
+        }
+      }
     },
     "Last 10 detections" : {
       "localizations" : {
@@ -327,6 +394,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karte und Details"
+          }
+        }
+      }
+    },
+    "month_period" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monat"
           }
         }
       }
@@ -482,7 +559,14 @@
       }
     },
     "scientific_name" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wiss. Name"
+          }
+        }
+      }
     },
     "Score" : {
       "localizations" : {
@@ -585,7 +669,14 @@
       }
     },
     "species id" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Art ID"
+          }
+        }
+      }
     },
     "Species list settings" : {
       "localizations" : {
@@ -643,6 +734,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gesamte Detektionen %lld"
+          }
+        }
+      }
+    },
+    "week_period" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Woche"
           }
         }
       }

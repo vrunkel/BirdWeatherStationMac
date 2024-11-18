@@ -11,7 +11,7 @@ import UniformTypeIdentifiers
 
 struct SpeciesListView: View {
     
-    @AppStorage("SamplePeriod", store: .standard) var samplePeriod : Period = .week
+    @AppStorage("SamplePeriod", store: .standard) var samplePeriod : Period = .all
     @AppStorage("SortSpeciesListBy", store: .standard) var sortSpeciesList : String = "top"
     @AppStorage("SortSpeciesListOrder", store: .standard) var sortSpeciesOrder : String = "desc"
     @AppStorage("ShowSpeciesImage", store: .standard) var showSpeciesImage : Bool = false
@@ -36,7 +36,7 @@ struct SpeciesListView: View {
                 if showSinceDate {
                     Text("data since: species \(stationStatus!.species) - detections \(stationStatus!.detections)")
                 } else {
-                    Text("\(samplePeriod.rawValue): species \(stationStatus!.species) - detections \(stationStatus!.detections)")
+                    Text("\(samplePeriod.toLocalizedString()): species \(stationStatus!.species) - detections \(stationStatus!.detections)")
                 }
                 
                 Button(action: {
@@ -156,12 +156,13 @@ struct SpeciesListView: View {
         }, label: {
             Image(systemName: "gearshape")
             Text("Species list settings")
+            Text("Species list settings")
         })
         .buttonStyle(.borderless)
         if showSettings {
             Picker("Sample period", selection: $samplePeriod) {
                 ForEach(Period.allCases, id: \.self) { aPeriod in
-                    Text(aPeriod.rawValue)
+                    Text(aPeriod.toLocalizedString())
                         .tag(aPeriod)
                 }
             }
@@ -258,6 +259,9 @@ struct SpeciesListView: View {
         species.removeAll()
         loading = false
         page = 1
+        Task {
+            await loadData()
+        }
     }
     
     private func exportSpecies() {

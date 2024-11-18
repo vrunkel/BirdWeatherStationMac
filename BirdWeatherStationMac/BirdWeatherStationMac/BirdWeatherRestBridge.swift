@@ -19,6 +19,24 @@ enum Period: String, Equatable, CaseIterable {
     case week
     case month
     case all
+    
+    func toLocalizedString() -> String {
+         let value: String
+
+           switch self {
+           case .day:
+             value = String(localized: "day_period")
+           case .week:
+             value = String(localized: "week_period")
+           case .month:
+             value = String(localized: "month_period")
+           case .all:
+             value = String(localized: "all_period")
+           }
+        
+           return value
+      }
+    
 }
 
 struct StationStatus {
