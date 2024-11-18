@@ -347,7 +347,7 @@
 				CODE_SIGN_ENTITLEMENTS = BirdWeatherStationMac/BirdWeatherStation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"BirdWeatherStationMac/Preview Content\"";
 				DEVELOPMENT_TEAM = 3YKFA98U4Y;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -376,7 +376,7 @@
 				CODE_SIGN_ENTITLEMENTS = BirdWeatherStationMac/BirdWeatherStation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"BirdWeatherStationMac/Preview Content\"";
 				DEVELOPMENT_TEAM = 3YKFA98U4Y;
 				ENABLE_HARDENED_RUNTIME = YES;
